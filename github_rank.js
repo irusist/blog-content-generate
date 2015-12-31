@@ -1,5 +1,6 @@
 var https = require("https");
 var fs = require("fs");
+var moment = require("moment");
 
 var file = "2100-01-01-Github语言排行.md";
 
@@ -77,7 +78,8 @@ function hexoHeader() {
  * @returns {string}
  */
 function description() {
-    return "以下内容是通过github api动态生成的\n\n";
+    var time = moment(new Date()).format('YYYY年MM月DD日HH时mm分ss秒');
+    return "以下内容是通过github api动态生成的, 生成时间: " + time + "\n\n";
 }
 
 // java
