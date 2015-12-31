@@ -90,6 +90,8 @@ rank("Scala");
 rank("Go");
 // G
 rank("C");
+// JavaScript
+rank("JavaScript");
 
 
 
